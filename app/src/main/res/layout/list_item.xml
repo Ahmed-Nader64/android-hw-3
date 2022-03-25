@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/donut"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/donut" />
+
+    <TextView
+        android:id="@+id/text_donut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@+id/donut"
+        android:fontFamily="monospace"
+        android:text="donut"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/price_donut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_donut"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/donut"
+        android:text="price:"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/itemsPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_donut"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="3dp"
+        android:layout_toEndOf="@+id/price_donut"
+        android:text="3"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+</RelativeLayout>
